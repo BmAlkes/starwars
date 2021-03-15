@@ -1,118 +1,117 @@
-header{
-    width:100%;
-    height:100vh;
-    background-image: url("../img/bg-masthead.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-position-y: -100px ;
-    background-attachment: fixed;
-    background-color: black;
-
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg-masthead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position-y: -100px;
+  background-attachment: fixed;
+  background-color: black;
 }
-nav{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav span {
+  color: rgb(177, 174, 174);
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Star Jedi", arial;
+}
+
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: rgb(177, 174, 174);
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1 {
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 9rem;
+  letter-spacing: 26px;
+  text-transform: uppercase;
+  line-height: 7rem;
+  font-family: "Star Jedi", arial;
+  margin-top: 2rem;
+  padding: 2rem;
+  /* opacity: 0.8; */
+  background-image: linear-gradient(0deg,rgba(0,0,0, 0.2),var(--gold));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.intro p {
+  color: var(--gray);
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+.btn {
+  border: 0;
+  font-weight: 300;
+  background-color: yellow;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 578px) {
+  nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-}
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  nav span {
+    margin: 0px;
+    padding: 5px;
+    font-size: 15px;
+    color: gold;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    margin: 0;
+    padding: 3px;
+    color: gold;
+  }
 
-nav span{
-    color: rgb(177, 174, 174);
-    margin: 1rem;
-    padding: 1rem;
-    font-size:1.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-family: 'Star Jedi', arial;
-}
-
-nav ul li{
-    display: inline;
-}
-nav ul li a{
-    color: rgb(177, 174, 174); 
-    text-decoration:none;
-    padding:1rem;
-    margin: 1rem;
-}
-
-.intro{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.intro h1{
+  .intro h1 {
     color: var(--gold);
     font-weight: 900;
-    font-size:9rem;
-    letter-spacing: 26px;
+    font-size: 4rem;
+    letter-spacing: 10px;
     text-transform: uppercase;
-    line-height: 7rem;
-    font-family: 'Star Jedi', arial;
-    margin-top: 2rem;
-    padding:2rem;
-    text-shadow: 1rem 1rem  rgba(0,0,0,0.9);
+    line-height: 4rem;
+    font-family: "Star Jedi", arial;
+    margin-top: 6rem;
+    padding: 2rem;
+    text-shadow: 1rem 1rem rgba(0, 0, 0, 0.9);
     opacity: 0.8;
-}
-
-.intro p{
-    color: var(--gray);
-    font-size:1.5rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    max-width: 500px;
-    text-align: center;
-}
-
-.btn{
-    border: 0;
-    font-weight: 300;
-    background-color:yellow;
-    padding:1rem;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-}
-
-@media(max-width:578px){
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding-top:10px;
-        
-        
-    }
-    nav span{
-        
-        margin: 0px;
-        padding:5px;
-        font-size:15px;
-        color:gold;
-    }
-    nav ul li a{
-        font-size: 1rem;
-        margin: 0;
-        padding: 3px;
-        color: gold;
-        
-    }
-
-    .intro h1{
-        color: var(--gold);
-        font-weight: 900;
-        font-size:4rem;
-        letter-spacing: 10px;
-        text-transform: uppercase;
-        line-height: 4rem;
-        font-family: 'Star Jedi', arial;
-        margin-top: 6rem;
-        padding:2rem;
-        text-shadow: 1rem 1rem  rgba(0,0,0,0.9);
-        opacity: 0.8;
-    }
+  }
 }
