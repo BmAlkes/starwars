@@ -160,12 +160,23 @@ footer{
         display:flex; 
       flex-direction: column;
         margin-top: 1rem;
+        margin-bottom: 1.5rem;
       }
       .box{
         width: 260px;
         margin: 10px auto;
-        height:120px;
+        height:110px;
         
+    }
+    .box i{
+        color: var(--gold);
+        font-size:1rem;
+        padding: 5px;
+    }
+    
+    .box p{
+        margin-top: 1rem;
+        color: gray;
     }
     .bar::after{
         content:"";
@@ -173,8 +184,18 @@ footer{
         width: 50px;
         height:5px;
         position:absolute;
-        bottom: 50px;
-        left: calc(50% - 7%);   
+        bottom: 45px;
+        left: 40%;   
+    }
+    .logos i{
+        font-size:1rem;
+        padding:5px;
+        border: 1px solid gray;
+        border-radius: 30%;
+        margin:10px;
+    }
+    footer{
+        padding-top:1rem;
     }
 
   
